@@ -1,3 +1,20 @@
-# Chapters
-
-- 
+- [Chapter 1: Basic Concepts and Computer Evolution](1.md)
+- [Chapter 2: Performance Concepts / Khái Niệm Hiệu Năng](2.md)
+- [Chapter 3: Computer Function and Interconnection / Chức Năng và Kết Nối Máy Tính](3.md)
+- [Chapter 4: Memory Hierarchy / Phân Cấp Bộ Nhớ](4.md)
+- [Chapter 5: Cache Memory / Bộ Nhớ Đệm](5.md)
+- [Chapter 6: Internal Memory / Bộ Nhớ Trong](6.md)
+- [Chapter 7: External Memory / Bộ Nhớ Ngoài](7.md)
+- [Chapter 8: Input/Output / Nhập/Xuất](8.md)
+*   [Chapter 9: Operating System Support / Hỗ Trợ của Hệ Điều Hành](9.md)
+*   [Chapter 10: Number Systems / Hệ Thống Số](10.md)
+*   [Chapter 11: Computer Arithmetic / Số học máy tính](11.md)
+*   [Chapter 12: Instruction Sets: Addressing Modes and Formats / Tập lệnh: Chế độ định địa chỉ và Định dạng](12.md)
+*   [Chapter 13: Processor Structure and Function / Cấu Trúc và Chức Năng của Bộ Xử Lý](13.md)
+*   [Chapter 14: Reduced Instruction Set Computers (RISC) / Máy tính với Tập lệnh Rút gọn](14.md)
+*   [Chapter 15: Instruction-Level Parallelism and Superscalar Processors / Song song mức lệnh và Bộ xử lý siêu vô hướng](15.md)
+*   [Chapter 16: Advanced Pipeline and Processor Organization / Ông lệnh nâng cao và Tổ chức bộ xử lý](16.md)
+*   [Chapter 17: Microprogrammed Control / Điều khiển vi chương trình](17.md)
+*   [Chapter 18: Parallel Processing / Xử lý song song](18.md)
+*   [Chapter 19: Control Unit Operation and Microprogrammed Control / Hoạt động của Bộ điều khiển và Điều khiển Vi chương trình](19.md)
+*   [Chapter 20: Parallel Processing / Xử lý song song](20.md)
