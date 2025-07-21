@@ -1,3 +1,6 @@
+# Tổng hợp kiến thức Tổ chức và Kiến trúc máy tính (AKA Computer Organization and Architecture)
+
+
 - [Chapter 1: Basic Concepts and Computer Evolution](1.md)
 - [Chapter 2: Performance Concepts / Khái Niệm Hiệu Năng](2.md)
 - [Chapter 3: Computer Function and Interconnection / Chức Năng và Kết Nối Máy Tính](3.md)
