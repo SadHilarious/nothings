@@ -1,0 +1,3284 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Anki PDF Exporter: CSI106 (264 cards)</title>
+    <style>
+        body {
+            font-size: 9pt;
+            font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+        }
+        .cards-container {
+            column-count: 1;
+        }
+        .card > table {
+            width: 100%;
+        }
+        .card > table > tr > td {
+            vertical-align: top
+        }
+        td.question, td.answer {
+            word-break: break-all;
+            word-break: break-word;
+            hyphens: auto;
+        }
+        td.index {
+            font-size: 9pt;
+            width: 5%;
+            color: #888888;
+        }
+        td.question {
+            width: 18%;
+            font-weight: normal;
+        }
+        td.spacer {
+            width: 3%;
+        }
+        td.answer {
+            width: 100%;
+        }
+        .card {
+            page-break-inside: avoid;
+            page-break-after: auto;
+        }
+        img {
+            max-width: 35%;
+            max-height: 35vh;
+        }
+        hr {
+            color: #DADADA;
+            border-width: 1px;
+            height: 0px;
+            border-style: solid;
+        }
+        
+/* Cloze deletions */
+.cloze {
+  font-weight: bold;
+  color: blue;
+}
+
+/* Image occlusions */
+#io-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#io-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3
+}
+
+#io-original {
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 2
+}
+
+#io-revl-btn {
+  display: none;
+}
+    </style>
+    <base href="file:///C:/Users/tusieumap/scoop/persist/anki/data/User%201/collection.media/">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    function unfixAll() {
+      for (const el of document.getElementsByTagName("*")){
+          var style = window.getComputedStyle(el);
+          if (style.position === "fixed") {
+            if (style.display === "none" || style.visibility === "hidden") return;
+            el.remove();
+          }
+      }
+    }
+    function removeInlineImgStyles(){
+        for(let elm of document.getElementsByTagName("img")){
+            elm.style.width = null;
+            elm.style.height = null;
+      }
+    }
+
+    window.addEventListener("load", unfixAll);
+    window.addEventListener("load", removeInlineImgStyles);
+    </script>
+</head>
+    
+<body>
+<div class="cards-container">
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">1.1</td>
+                    <td class="question">The ____ model is the basis for today's computers.,"a. Leibnitz<br/>b. von Neumann<br/>c. Pascal<br/>d. Charles Babbage<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">2.1</td>
+                    <td class="question">In a computer, the ____ subsystem stores data and programs.,"a. ALU<br/>b. input/output<br/>c. memory<br/>d. control unit<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">3.1</td>
+                    <td class="question">In a computer, the ____ subsystem performs calculations and logical opera-tions.,"a. ALU<br/>b. input/output<br/>c. memory<br/>d. control unit<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">4.1</td>
+                    <td class="question">In a computer, the ____ subsystem accepts data and programs and sends pro-cessing results to output devices.,"a. ALU<br/>b. input/output<br/>c. memory<br/>d. control unit<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">5.1</td>
+                    <td class="question">In a computer, the ____ subsystem serves as a manager of the other subsys-tems.,"a. ALU<br/>b. input/output<br/>c. memory<br/>d. control unit<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">6.1</td>
+                    <td class="question">According to the von Neumann model, ____ are stored in memory.,"a. only data<br/>b. only programs<br/>c. data and programs<br/>d. neither data nor programs<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">7.1</td>
+                    <td class="question">A step-by-step solution to a problem is called ____.,"a. hardware<br/>b. an operating system<br/>c. a computer language<br/>d. an algorithm<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">8.1</td>
+                    <td class="question">FORTRAN and COBOL are examples of ____.,"a. hardware<br/>b. operating systems<br/>c. computer languages<br/>d. algorithms<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">9.1</td>
+                    <td class="question">A 17th-century computing machine that could perform addition and subtraction was the ____.,"a. Pascaline<br/>b. Jacquard loom<br/>c. Analytical Engine<br/>d. Babbage machine<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">10.1</td>
+                    <td class="question">____ is a set of instructions in a computer language that tells the computer what to do with data.,"a. An operating system<br/>b. An algorithm<br/>c. A data processor<br/>d. A program<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">11.1</td>
+                    <td class="question">____ is the design and writing of a program in structured form.,"a. Software engineering<br/>b. Hardware engineering<br/>c. Algorithm development<br/>d. Instructional architecture<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">12.1</td>
+                    <td class="question">The first electronic special-purpose computer was called ____.,"a. Pascal<br/>b. Pascaline<br/>c. ABC<br/>d. ENIAC<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">13.1</td>
+                    <td class="question">One of the first computers based on the von Neumann model was called ____.,"a. Pascal<br/>b. Pascaline<br/>c. ABC<br/>d. EDVAC<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">14.1</td>
+                    <td class="question">The first computing machine to use the idea of storage and programming was called ____.,"a. the Madeline<br/>b. EDVAC<br/>c. the Babbage machine<br/>d. the Jacquard loom<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">15.1</td>
+                    <td class="question">____ separated the programming task from computer operation tasks.,"a. Algorithms<br/>b. Data processors<br/>c. High-level programming languages<br/>d. Operating systems<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">16.1</td>
+                    <td class="question">The base of the decimal number system is ____.,"a) 2<br/>b) 8<br/>c) 10<br/>d) 16<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">17.1</td>
+                    <td class="question">The base of the binary number system is ____.,"a) 2<br/>b) 8<br/>c) 10<br/>d) 16<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">18.1</td>
+                    <td class="question">The base of the octal number system is ____.,"a) 2<br/>b) 8<br/>c) 10<br/>d) 16<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">19.1</td>
+                    <td class="question">The base of the hexadecimal number system is ____.,"a) 2<br/>b) 8<br/>c) 10<br/>d) 16<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">20.1</td>
+                    <td class="question">When converting a decimal integer to base b, we repeatedly ____ b.,"a) divide<br/>b) multiply<br/>c) add to<br/>d) subtract from<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">21.1</td>
+                    <td class="question">When converting a binary fraction to decimal, we repeatedly ____.,"a) divide<br/>b) multiply<br/>c) add to<br/>d) subtract from<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">22.1</td>
+                    <td class="question">Which of the following representations is erroneous? (7),"a) (10111)2<br/>b) (349)8<br/>c) (3AB)16<br/>d) 256<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">23.1</td>
+                    <td class="question">Which of the following representations is erroneous? (8),"a) (10211)2<br/>b) (342)8<br/>c) (EEE)16<br/>d) 145<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">24.1</td>
+                    <td class="question">Which of the following representations is erroneous? (9),"a) (111)2<br/>b) (346)8<br/>c) (EEG)16<br/>d) 221<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">25.1</td>
+                    <td class="question">Which of the following representations is erroneous? (10),"a) (110)2<br/>b) (141)8<br/>c) (EF)16<br/>d) 22A<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">26.1</td>
+                    <td class="question">Which of the following is equivalent to 12 in decimal?,"a) (1110)2<br/>b) (C)16<br/>c) (15)8<br/>d) None of the others<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">27.1</td>
+                    <td class="question">Which of the following is equivalent to 24 in decimal?,"a) (11000)2<br/>b) (1A)16<br/>c) (31)8<br/>d) None of the others<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">28.1</td>
+                    <td class="question">Convert the binary number 1001 to decimal. The answer is:,"a) 7<br/>b) 9<br/>c) 11<br/>d) 15<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">29.1</td>
+                    <td class="question">Convert the binary number 101010 to hexadecimal:,"a) 1A<br/>b) 1B<br/>c) 2A<br/>d) 2B<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">30.1</td>
+                    <td class="question">Convert the hexadecimal number 1B to decimal:,"a) 21<br/>b) 23<br/>c) 27<br/>d) 29<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">31.1</td>
+                    <td class="question">A byte consists of ____ bits.,"a. 2<br/>b. 4<br/>c. 8<br/>d. 16<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">32.1</td>
+                    <td class="question">In a set of 64 symbols, each symbol requires a bit pattern length of ____ bits.,"a. 4<br/>b. 5<br/>c. 6<br/>d. 7<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">33.1</td>
+                    <td class="question">How many symbols can be represented by a bit pattern with ten bits?,"a. 128<br/>b. 256<br/>c. 512<br/>d. 1024<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">34.1</td>
+                    <td class="question">If the ASCII code for E is 1000101, then the ASCII code for e is ____. An-swer the question without consulting the ASCII table.,"a. 1000110<br/>b. 1000111<br/>c. 0000110<br/>d. 1100101<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">35.1</td>
+                    <td class="question">A 32-bit code called ____ represents symbols in all languages.,"a. ANSI<br/>b. Unicode<br/>c. EBCDIC<br/>d. Extended ASCII<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">36.1</td>
+                    <td class="question">An image can be represented in a computer using the ____ method.,"a. bitmap graphic<br/>b. vector graphic<br/>c. only<br/>d. either bitmap or vector graphic<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">37.1</td>
+                    <td class="question">In the ____ graphic method of representing an image in a computer, each pixel is assigned a bit patterns.,"a. bitmap<br/>b. vector<br/>c. quantized<br/>d. binary<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">38.1</td>
+                    <td class="question">In the ____ graphic method of representing an image in a computer, the image is decomposed into a combination of geometrical figures.,"a. bitmap<br/>b. vector<br/>c. quantized<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">39.1</td>
+                    <td class="question">In the ____ graphic method of representing an image in a computer, re-scaling of the image creates a ragged or grainy image.,"a. bitmap<br/>b. vector<br/>c. quantized<br/>d. binary<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">40.1</td>
+                    <td class="question">Assume a new Excess system uses 17 bits to represent the exponent section. What is he bias value in this system?,"a. 17<br/>b. 16<br/>c. 65535<br/>d. 65536<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">41.1</td>
+                    <td class="question">Which number representation method is often used to store the exponential value of a fractional part?,"a. unsigned integers<br/>b. two's complement<br/>c. Excess<br/>d. ten's complement<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">42.1</td>
+                    <td class="question">In an Excess conversion, we ____ the number to be converted.,"a. add the bias number to<br/>b. the bias number from<br/>c. multiply the bias number by<br/>d. divide<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">43.1</td>
+                    <td class="question">When a fractional part is normalized, the computer stores the ____.,"a. only the sign<br/>b. only the exponent<br/>c. only the mantissa<br/>d. the sign, exponent, and mantissa<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">44.1</td>
+                    <td class="question">The precision of the fractional part of a number stored in a computer is defined by the ____.,"a. sign<br/>b. exponent<br/>c. mantissa<br/>d. last digit<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">45.1</td>
+                    <td class="question">The combination of sign and mantissa of a real number in IEEE standard float-ing point format is stored as an integer in the ____ representation.,"a. unsigned<br/>b. sign-and-magnitude<br/>c. two's complement<br/>d. one's complement<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">46.1</td>
+                    <td class="question">1. ____ is an arithmetic operation.,"a. The exclusive OR<br/>b. The unary NOT<br/>c. Subtraction<br/>d. The binary AND<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">47.1</td>
+                    <td class="question">2. ____ is a logical bit operator.,"a. The exclusive OR<br/>b. The unary NOT<br/>c. The binary AND<br/>d. exclusive OR, unary NOT, or binary AND<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">48.1</td>
+                    <td class="question">3. The ____ method of integer representation is the most common method for storing integers in computer memory.,"a. sign-and-magnitude<br/>b. one's complement<br/>c. two's complement<br/>d. unsigned integers<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">49.1</td>
+                    <td class="question">4. In two's complement addition, if there is a final carry after the left most column addition, ____.,"a. add it to the right most column<br/>b. add it to the left most column<br/>c. discard it<br/>d. increase the bit length<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">50.1</td>
+                    <td class="question">5. For an 8-bit allocation, the smallest decimal number that can be represented in two's complement form is ____.,"a. -8<br/>b. -127<br/>c. -128<br/>d. -256<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">51.1</td>
+                    <td class="question">6. For an 8-bit allocation, the largest decimal number that can be represented in two's complement form is ____.,"a. 8<br/>b. 127<br/>c. 128<br/>d. 256<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">52.1</td>
+                    <td class="question">7. In two's complement representation with a 4-bit allocation, we get ____ when we add 1 to 7.,"a. 8<br/>b. 1<br/>c. -7<br/>d. -8<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">53.1</td>
+                    <td class="question">8. In two's complement representation with a 4-bit allocation, we get ____ when we add 5 to 5.,"a. -5<br/>b. -6<br/>c. -7<br/>d. 10<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">54.1</td>
+                    <td class="question">9. If the exponent in Excess_127 is binary 10000101, the exponent in decimal is ____.,"a. 6<br/>b. 7<br/>c. 8<br/>d. 9<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">55.1</td>
+                    <td class="question">10. If we are adding two numbers, one of which has an exponent value of 7 and the other an exponent value of 9, we need to shift the decimal point of the smaller number ____.,"a. one place to the left<br/>b. one place to the right<br/>c. two places to the left<br/>d. two places to the right<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">56.1</td>
+                    <td class="question">11. ____ operator (s) takes two inputs to produce one output.,"a. Only AND<br/>b. Only OR<br/>c. Only XOR<br/>d. AND, OR, or XOR<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">57.1</td>
+                    <td class="question">12. The unary ____ operator inverts its single input.,"a. AND<br/>b. OR<br/>c. NOT<br/>d. XOR<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">58.1</td>
+                    <td class="question">13. ____ operator (s), if the input is two 0s, the output is 0.,"a. In only AND<br/>b. In only OR<br/>c. In only XOR<br/>d. In AND, OR, or XOR<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">59.1</td>
+                    <td class="question">14. ____ operator (s), if the input is two 1s, the output is 0.,"a. In only AND<br/>b. In only OR<br/>c. In only XOR<br/>d. In AND, OR, or XOR<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">60.1</td>
+                    <td class="question">15. For the binary AND operation, only an input of ____ gives an output of 1.,"a. two 0s<br/>b. two 1s<br/>c. one 0 and one 1<br/>d. two 2s<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">61.1</td>
+                    <td class="question">16. For the binary OR operation, only an input of ____ gives an output of 0.,"a. two 0s<br/>b. two 1s<br/>c. one 0 and one 1<br/>d. two 2s<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">62.1</td>
+                    <td class="question">17. We use a bit pattern called a ____ to modify another bit pattern.,"a. mask<br/>b. carry<br/>c. float<br/>d. byte<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">63.1</td>
+                    <td class="question">18. To flip all the bits of a bit pattern, make a mask of all 1s and then ____ the bit pattern and the mask.,"a. AND<br/>b. OR<br/>c. XOR<br/>d. NOT<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">64.1</td>
+                    <td class="question">19. To un-set (force to 0) all the bits of a bit pattern, make a mask of all 0s and then ____ the bit pattern and the mask.,"a. AND<br/>b. OR<br/>c. XOR<br/>d. NOT<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">65.1</td>
+                    <td class="question">20. To set (force to 1) all the bits of a bit pattern, make a mask of all 1s and then ____ the bit pattern and the mask.,"a. AND<br/>b. OR<br/>c. XOR<br/>d. NOT<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">66.1</td>
+                    <td class="question">1. The TCP/IP model has ____ layers.,"a. five<br/>b. six<br/>c. seven<br/>d. eight<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">67.1</td>
+                    <td class="question">2. The ____ layer of the TCP/IP protocol suite provides services for end users.,"a. data-link<br/>b. transport<br/>c. application<br/>d. physical<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">68.1</td>
+                    <td class="question">3. The ____ layer of the TCP/IP protocol suite transmits a bit stream over a physical medium.,"a. physical<br/>b. data-link<br/>c. network<br/>d. transport<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">69.1</td>
+                    <td class="question">4. The ____ layer of the TCP/IP protocol suite is responsible for node-to-node delivery of a frame between two adjacent nodes.,"a. transport<br/>b. network<br/>c. data-link<br/>d. session<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">70.1</td>
+                    <td class="question">5. The ____ layer of the TCP/IP protocol suite is responsible for source-to-destination delivery of the entire message.,"a. transport<br/>b. network<br/>c. data-link<br/>d. session<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">71.1</td>
+                    <td class="question">6. What is the domain name in the e mail address kayla@nasa.gov?,"a. kayla<br/>b. kayla@nasa.gov<br/>c. nasa.gov<br/>d. gov<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">72.1</td>
+                    <td class="question">7. Which physical topology uses a hub or switch?,"a. bus<br/>b. ring<br/>c. star<br/>d. bus and ring<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">73.1</td>
+                    <td class="question">8. IP addresses are currently ____ bits in length.,"a. 4<br/>b. 8<br/>c. 32<br/>d. 40<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">74.1</td>
+                    <td class="question">9. ____ protocol (s) is one of the protocols in the transport layer.,"a. Only TCP<br/>b. Only UDP<br/>c. Only SCTP<br/>d. TCP, UDP, and SCTP<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">75.1</td>
+                    <td class="question">10. ____ is a protocol for file transfer.,"a. FTP<br/>b. SMTP<br/>c. TELNET<br/>d. HTTP<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">76.1</td>
+                    <td class="question">11. ____ is a protocol for e mail services.,"a. FTP<br/>b. SMTP<br/>c. TELNET<br/>d. HTTP<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">77.1</td>
+                    <td class="question">12. ____ is a protocol for accessing and transferring documents on the WWW.,"a. FTP<br/>b. SMTP<br/>c. TELNET<br/>d. HTTP<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">78.1</td>
+                    <td class="question">13. Every computer looking to access the Internet would be known as this,"a. client<br/>b. desktop<br/>c. hub<br/>d. server<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">79.1</td>
+                    <td class="question">14. Identifies company or commercial sites,"a. .org<br/>b. .com<br/>c. .gov<br/>d. .edu<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">80.1</td>
+                    <td class="question">15. what is indicated when the domain name has only two letters like .us, .uk, .au, .mx, or .ca,"a. invalid domain<br/>b. private domain<br/>c. secure domain<br/>d. country domain<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">81.1</td>
+                    <td class="question">1. ____ is a program that facilitates the execution of other programs.,"a. An operating system<br/>b. Hardware<br/>c. A queue<br/>d. An application program<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">82.1</td>
+                    <td class="question">2. ____ supervises the activity of each component in a computer system.,"a. An operating system<br/>b. Hardware<br/>c. A queue<br/>d. An application program<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">83.1</td>
+                    <td class="question">3. Multi-programming requires a ____ operating-system.,"a. batch<br/>b. time-sharing<br/>c. parallel<br/>d. distributed<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">84.1</td>
+                    <td class="question">4. ____ is multi-programming with swapping.,"a. Partitioning<br/>b. Paging<br/>c. Demand paging<br/>d. Queuing<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">85.1</td>
+                    <td class="question">5. ____ is multi-programming without swapping.,"a. Partitioning<br/>b. Virtual memory<br/>c. Demand paging<br/>d. Queuing<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">86.1</td>
+                    <td class="question">6. In ____ only one program can reside in memory for execution.,"a. mono-programming<br/>b. multi-programming<br/>c. partitioning<br/>d. paging<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">87.1</td>
+                    <td class="question">7. ____ is a multi-programming method in which multiple programs are entirely in memory with each program occupying a contiguous space.,"a. Partitioning<br/>b. Paging<br/>c. Demand paging<br/>d. Demand segmentation<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">88.1</td>
+                    <td class="question">8. In paging, a program is divided into equally sized sections called ____.,"a. pages<br/>b. frames<br/>c. segments<br/>d. partitions<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">89.1</td>
+                    <td class="question">9. In ____, the program can be divided into differently sized sections.,"a. partitioning<br/>b. paging<br/>c. demand paging<br/>d. demand segmentation<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">90.1</td>
+                    <td class="question">10. In ____, the program can be divided into equally sized sections called pages, but the pages need not be in memory at the same time for execution.,"a. partitioning<br/>b. paging<br/>c. demand paging<br/>d. demand segmentation<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">91.1</td>
+                    <td class="question">11. A process in the ____ state can go to either the ready, terminated, or waiting states.,"a. hold<br/>b. virtual<br/>c. running<br/>d. hold or running<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">92.1</td>
+                    <td class="question">12. A process in the ready state goes to the running state when ____.,"a. it enters memory<br/>b. it requests I/O<br/>c. it gets access to the CPU<br/>d. it finishes running<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">93.1</td>
+                    <td class="question">13. A program becomes a ____ when it is selected by the operating system and brought to the hold state.,"a. job<br/>b. process<br/>c. deadlock<br/>d. partition<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">94.1</td>
+                    <td class="question">14. Every process is ____.,"a. only a job<br/>b. only a program<br/>c. only a partition<br/>d. a job and a program<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">95.1</td>
+                    <td class="question">15. The ____ scheduler creates a process from a job and changes a process back to a job.,"a. job<br/>b. process<br/>c. virtual<br/>d. queue<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">96.1</td>
+                    <td class="question">16. The ____ scheduler moves a process from one process state to another.,"a. job<br/>b. process<br/>c. virtual<br/>d. queue<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">97.1</td>
+                    <td class="question">17. To prevent ____ an operating system can put resource restrictions on pro-cesses.,"a. starvation<br/>b. synchronization<br/>c. paging<br/>d. deadlock<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">98.1</td>
+                    <td class="question">18. ____ can occur if a process has too many resource restrictions.,"a. Starvation<br/>b. Synchronization<br/>c. Paging<br/>d. Deadlock<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">99.1</td>
+                    <td class="question">19. The ____ manager is responsible for archiving and backup.,"a. memory<br/>b. process<br/>c. device<br/>d. file<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">100.1</td>
+                    <td class="question">20. The ____ manager is responsible for access to I/O devices.,"a. memory<br/>b. process<br/>c. device<br/>d. file<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">101.1</td>
+                    <td class="question">1. ____ is a step-by-step method for solving a problem or doing a task.,"a. A construct<br/>b. A recursion<br/>c. An iteration<br/>d. An algorithm<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">102.1</td>
+                    <td class="question">2. There are ____ basic constructs in computer -science.,"a. one<br/>b. two<br/>c. three<br/>d. four<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">103.1</td>
+                    <td class="question">3. The ____ construct tests a condition.,"a. sequence<br/>b. decision<br/>c. repetition<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">104.1</td>
+                    <td class="question">4. The ____ construct uses a set of actions one after another.,"a. sequence<br/>b. decision<br/>c. repetition<br/>d. flow<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">105.1</td>
+                    <td class="question">5. The ____ construct handles repeated actions.,"a. sequence<br/>b. decision<br/>c. repetition<br/>d. flow<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">106.1</td>
+                    <td class="question">6. ____ is a pictorial representation of an algorithm.,"a. A UML diagram<br/>b. A program<br/>c. Pseudocode<br/>d. An algorithm<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">107.1</td>
+                    <td class="question">7. ____ is an English-language-like representation of code.,"a. A UML diagram<br/>b. A program<br/>c. Pseudocode<br/>d. An algorithm<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">108.1</td>
+                    <td class="question">8. ____ is a basic algorithm that adds a list of numbers.,"a. Summation<br/>b. Product<br/>c. Smallest<br/>d. Largest<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">109.1</td>
+                    <td class="question">9. ____ is a basic algorithm that multiplies a list of numbers.,"a. Summation<br/>b. Product<br/>c. Smallest<br/>d. Largest<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">110.1</td>
+                    <td class="question">10. ____ is a basic algorithm that arranges data according to its value.,"a. Inquiry<br/>b. Sorting<br/>c. Searching<br/>d. Recursion<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">111.1</td>
+                    <td class="question">11. The items are divided into two lists (sorted and unsorted) ____ sort.,"a. only in a selection<br/>b. only in a bubble<br/>c. only in an insertion<br/>d. in selection, bubble, or insertion<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">112.1</td>
+                    <td class="question">12. In ____ sort, the item that goes into the sorted list is always the first item in the unsorted list.,"a. selection<br/>b. bubble<br/>c. insertion<br/>d. every<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">113.1</td>
+                    <td class="question">13. In ____ sort, the smallest item from the unsorted list is swapped with the item at the beginning of the unsorted list.,"a. selection<br/>b. bubble<br/>c. insertion<br/>d. every<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">114.1</td>
+                    <td class="question">14. In ____ sort, the smallest item moves to the beginning of the unsorted list. There is no one-to-one swapping.,"a. selection<br/>b. bubble<br/>c. insertion<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">115.1</td>
+                    <td class="question">15. ____ is a basic algorithm in which we want to find the location of a target in a list of items.,"a. Sorting<br/>b. Searching<br/>c. Product<br/>d. Summation<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">116.1</td>
+                    <td class="question">16. We use a ____ search for an unordered list.,"a. sequential<br/>b. binary<br/>c. bubble<br/>d. insertion<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">117.1</td>
+                    <td class="question">17. We use a ____ search for an ordered list.,"a. sequential<br/>b. binary<br/>c. bubble<br/>d. insertion<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">118.1</td>
+                    <td class="question">18. ____ is a process in which an algorithm calls itself.,"a. Insertion<br/>b. Searching<br/>c. Recursion<br/>d. Iteration<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">119.1</td>
+                    <td class="question">19. What is a linear search?,"a. A sequential method for sorting elements within a list.<br/>b. A sequential method for sorting and finding an element within a list.<br/>c. A sequential method for finding an element within a list.<br/>d. A sequential method that reduces the size of a list.<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">120.1</td>
+                    <td class="question">20. How many checks will a linear search take to find number 6 in the list? 3, 4, 7, 6, 5, 1,"a. 3<br/>b. 7<br/>c. 5<br/>d. 4<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">121.1</td>
+                    <td class="question">1. The only language understood by computer hardware is a ____ language.,"a. machine<br/>b. symbolic<br/>c. high-level<br/>d. natural<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">122.1</td>
+                    <td class="question">2. C, C++, and Java can be classified as ____ languages.,"a. machine<br/>b. symbolic<br/>c. high-level<br/>d. natural<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">123.1</td>
+                    <td class="question">3. FORTRAN is a(n) ____ language.,"a. procedural<br/>b. functional<br/>c. declarative<br/>d. object-oriented<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">124.1</td>
+                    <td class="question">4. Pascal is a(n) ____ language.,"a. procedural<br/>b. functional<br/>c. declarative<br/>d. object-oriented<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">125.1</td>
+                    <td class="question">5. Java is a(n) ____ language.,"a. procedural<br/>b. functional<br/>c. declarative<br/>d. object-oriented<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">126.1</td>
+                    <td class="question">6. LISP is a(n) ____ language.,"a. procedural<br/>b. functional<br/>c. declarative<br/>d. object-oriented<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">127.1</td>
+                    <td class="question">7. ____ is a common language in the business -environment.,"a. FORTRAN<br/>b. C++<br/>c. C<br/>d. COBOL<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">128.1</td>
+                    <td class="question">8. ____ is a popular object-oriented language.,"a. FORTRAN<br/>b. COBOL<br/>c. Java<br/>d. LISP<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">129.1</td>
+                    <td class="question">9. A ____ program can be either an application or an applet.,"a. FORTRAN<br/>b. C++<br/>c. C<br/>d. Java<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">130.1</td>
+                    <td class="question">10. LISP and Scheme are both ____ languages.,"a. procedural<br/>b. functional<br/>c. declarative<br/>d. object-oriented<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">131.1</td>
+                    <td class="question">1. One phase in system development is ____.,"a. analysis<br/>b. application<br/>c. designing<br/>d. collecting<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">132.1</td>
+                    <td class="question">2. Defining the users, requirements, and methods is part of the ____ phase.,"a. analysis<br/>b. design<br/>c. implementation<br/>d. testing<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">133.1</td>
+                    <td class="question">3. In the system development process, writing the program is part of the ____ phase.,"a. analysis<br/>b. design<br/>c. implementation<br/>d. testing<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">134.1</td>
+                    <td class="question">4. In the system development process, structure charts are tools used in the ____ phase.,"a. analysis<br/>b. design<br/>c. implementation<br/>d. testing<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">135.1</td>
+                    <td class="question">5. Testing a software system can involve ____ testing.,"a. black-box<br/>b. glass-box<br/>c. neither black-box nor glass-box<br/>d. both black-box and glass-box<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">136.1</td>
+                    <td class="question">6. ____ is the breaking up of a large project into smaller parts.,"a. Coupling<br/>b. Incrementing<br/>c. Obsolescence<br/>d. Modularization<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">137.1</td>
+                    <td class="question">7. ____ is a measure of how tightly two modules are bound to each other.,"a. Modularity<br/>b. Coupling<br/>c. Interoperability<br/>d. Cohesion<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">138.1</td>
+                    <td class="question">8. ____ between modules in a software system must be minimized.,"a. Coupling<br/>b. Cohesion<br/>c. Neither coupling nor cohesion<br/>d. Both coupling and cohesion<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">139.1</td>
+                    <td class="question">9. ____between modules in a software system must be maximized.,"a. Coupling<br/>b. Cohesion<br/>c. Neither coupling nor cohesion<br/>d. Both coupling and cohesion<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">140.1</td>
+                    <td class="question">10. What is the waterfall model?,"a. A phase cannot be started until the previous phase is completed<br/>b. A phase can be started until the previous phase is completed<br/>c. The development phase begins simultaneously<br/>d. The development process starts at the design phase<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">141.1</td>
+                    <td class="question">1. A data structure can be ____.,"a. only an array<br/>b. only a record<br/>c. only a linked list<br/>d. an array, a record, or a linked list<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">142.1</td>
+                    <td class="question">2. An array that consists of just rows and columns is a ____ array.,"a. one-dimensional<br/>b. two-dimensional<br/>c. three-dimensional<br/>d. multidimensional<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">143.1</td>
+                    <td class="question">3. Each element in a record is called ____.,"a. a variable<br/>b. an index<br/>c. a field<br/>d. a node<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">144.1</td>
+                    <td class="question">4. All the members of a record must be ____.,"a. the same type<br/>b. related types<br/>c. integer type<br/>d. character type<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">145.1</td>
+                    <td class="question">5. ____ is an ordered collection of data in which each element contains the location of the next element.,"a. An array<br/>b. A record<br/>c. A linked list<br/>d. A file<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">146.1</td>
+                    <td class="question">6. In a linked list, each element contains ____.,"a. only data<br/>b. only a link<br/>c. neither data nor a link<br/>d. data and a link<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">147.1</td>
+                    <td class="question">7. The ____ is a pointer that identifies the next element in the linked list.,"a. link<br/>b. node<br/>c. array<br/>d. data<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">148.1</td>
+                    <td class="question">8. Given a linked list called children, the pointer variable children identifies ____ element of the linked list.,"a. the first<br/>b. the second<br/>c. the last<br/>d. any<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">149.1</td>
+                    <td class="question">9. An empty linked list consists of ____.,"a. a node<br/>b. two nodes<br/>c. data and a link<br/>d. a null head pointer<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">150.1</td>
+                    <td class="question">10. To traverse a list, you need a ____ pointer.,"a. null<br/>b. walking<br/>c. beginning<br/>d. insertion<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">151.1</td>
+                    <td class="question">1. In an abstract data type, ____.,"a. the ADT implementation is known<br/>b. the ADT implementation is hidden<br/>c. the ADT public operations are hidden<br/>d. Nothing is hidden<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">152.1</td>
+                    <td class="question">2. A stack is a ____ structure.,"a. FIFO<br/>b. LIFO<br/>c. DIFO<br/>d. SIFO<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">153.1</td>
+                    <td class="question">3. A(n) ____ list is also known as a queue.,"a. LIFO<br/>b. FIFO<br/>c. unordered<br/>d. ordered<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">154.1</td>
+                    <td class="question">4. If A is the first data element input into a stack, followed by B, C, and D, then ____ is the first element to be removed.,"a. A<br/>b. B<br/>c. C<br/>d. D<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">155.1</td>
+                    <td class="question">5. If A is the first data element input into a queue, followed by B, C, and D, then ____ is the first element to be removed.,"a. A<br/>b. B<br/>c. C<br/>d. D<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">156.1</td>
+                    <td class="question">6. The pop operation ____ of the stack.,"a. deletes an item from the top<br/>b. deletes an item from the bottom<br/>c. inserts an item at the top<br/>d. inserts an item at the bottom<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">157.1</td>
+                    <td class="question">7. The push operation ____ of the stack.,"a. deletes an item from the top<br/>b. deletes an item from the bottom<br/>c. inserts an item at the top<br/>d. inserts an item at the bottom<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">158.1</td>
+                    <td class="question">8. In a binary tree, each node has ____ two subtrees.,"a. more than<br/>b. less than<br/>c. at most<br/>d. at least<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">159.1</td>
+                    <td class="question">9. In preorder traversal of a binary tree, the ____.,"a. left subtree is processed first<br/>b. right subtree is processed first<br/>c. root is processed first<br/>d. the root is never processed<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">160.1</td>
+                    <td class="question">10. In ____ traversal of a binary tree, the right subtree is processed last.,"a. preorder<br/>b. inorder<br/>c. postorder<br/>d. any order<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">161.1</td>
+                    <td class="question">12. In postorder traversal of a binary tree, the left subtree is processed ____.,"a. first<br/>b. second<br/>c. last<br/>d. after the right subtree<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">162.1</td>
+                    <td class="question">14. In an inorder traversal of a binary tree, the root is processed ____.,"a. first<br/>b. second<br/>c. last<br/>d. two times<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">163.1</td>
+                    <td class="question">15. What is a full binary tree?,"a. Each node has exactly zero or two children<br/>b. Each node has exactly two children<br/>c. All the leaves are at the same level<br/>d. Each node has exactly one or two children<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">164.1</td>
+                    <td class="question">1. ____ file can be accessed randomly.,"a. A sequential<br/>b. An indexed<br/>c. A hashed<br/>d. Any<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">165.1</td>
+                    <td class="question">2. ____ file can be accessed sequentially.,"a. A sequential<br/>b. An indexed<br/>c. A hashed<br/>d. No<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">166.1</td>
+                    <td class="question">3. When a sequential file is updated, the ____ file gets the actual update.,"a. new master<br/>b. old master<br/>c. transaction<br/>d. error report<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">167.1</td>
+                    <td class="question">4. When a sequential file is updated, the ____ file contains a list of all errors occurring during the update process.,"a. new master<br/>b. old master<br/>c. transaction<br/>d. error report<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">168.1</td>
+                    <td class="question">5. When a sequential file is updated, the ____ file contains the changes to be applied.,"a. new master<br/>b. old master<br/>c. transaction<br/>d. error report<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">169.1</td>
+                    <td class="question">6. After a sequential file is updated, the ____ file contains the most current data.,"a. new master<br/>b. old master<br/>c. transaction<br/>d. error report<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">170.1</td>
+                    <td class="question">7. If the transaction file key is 20 and the first master file key is 25, then we ____.,"a. add the new record to the new master file<br/>b. revise the contents of the old master file<br/>c. delete the data<br/>d. write the old master file record to the new master file<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">171.1</td>
+                    <td class="question">8. If the transaction file key is 20 with a delete code and the master file key is 20, then we ____.,"a. add the transaction to the new master file<br/>b. revise the contents of the old master file<br/>c. delete the data<br/>d. write the old master file record to the new master file<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">172.1</td>
+                    <td class="question">9. An indexed file consists of ____.,"a. only a sequential data file<br/>b. only an index<br/>c. only a random data file<br/>d. an index and random data file<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">173.1</td>
+                    <td class="question">10. The index of an indexed file has ____ fields.,"a. two<br/>b. three<br/>c. four<br/>d. any number of<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">174.1</td>
+                    <td class="question">11. In the ____ hashing method, selected digits are extracted from the key and used as the address.,"a. direct<br/>b. division remainder<br/>c. modulo division<br/>d. digit extraction<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">175.1</td>
+                    <td class="question">12. In the ____ hashing method, the key is divided by the file size, and the address is the remainder plus 1.,"a. direct<br/>b. modulo division<br/>c. division remainder<br/>d. digit extraction<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">176.1</td>
+                    <td class="question">13. In the ____ hashing method, there are no synonyms or collisions.,"a. direct<br/>b. modulo division<br/>c. division remainder<br/>d. digit extraction<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">177.1</td>
+                    <td class="question">14. ____ are keys that hash to the same location in the data file.,"a. Collisions<br/>b. Buckets<br/>c. Synonyms<br/>d. Linked lists<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">178.1</td>
+                    <td class="question">15. When a hashing algorithm produces an address for an insertion key and that address is already occupied, it is called a ____.,"a. collision<br/>b. probe<br/>c. synonym<br/>d. linked list<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">179.1</td>
+                    <td class="question">16. The address produced by a hashing algorithm is the ____ address.,"a. probe<br/>b. synonym<br/>c. collision<br/>d. home<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">180.1</td>
+                    <td class="question">17. The ____ area is the file area that contains all the home addresses.,"a. probe<br/>b. linked<br/>c. hash<br/>d. prime<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">181.1</td>
+                    <td class="question">18. In the ____ collision resolution method, we try to put data that cannot be placed in location 123 into location 124.,"a. open addressing<br/>b. linked list<br/>c. bucket hashing<br/>d. random hashing<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">182.1</td>
+                    <td class="question">19. Which one of the following explains the sequential file access method?,"a. random access according to the given byte number<br/>b. read bytes one at a time, in order<br/>c. read/write sequentially by record<br/>d. read/write randomly by record<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">183.1</td>
+                    <td class="question">20. The data structure used for file directory is called ____.,"a. mount table<br/>b. hash table<br/>c. file table<br/>d. process table<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">184.1</td>
+                    <td class="question">1. In a three-level DBMS architecture, the layer that interacts directly with the hardware is the ____ level.,"a. external<br/>b. conceptual<br/>c. internal<br/>d. physical<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">185.1</td>
+                    <td class="question">2. In a three-level DBMS architecture, the ____ level determines where data is actually stored on the storage devices.,"a. external<br/>b. conceptual<br/>c. internal<br/>d. physical<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">186.1</td>
+                    <td class="question">3. The ____ level of a three-level DBMS architecture defines the logical view of the data.,"a. external<br/>b. conceptual<br/>c. internal<br/>d. physical<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">187.1</td>
+                    <td class="question">4. The data model and the schema of a DBMS are often defined at the ____ level.,"a. external<br/>b. conceptual<br/>c. internal<br/>d. physical<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">188.1</td>
+                    <td class="question">5. In a three-level DBMS architecture, the ____ level interacts directly with the users.,"a. external<br/>b. conceptual<br/>c. internal<br/>d. physical<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">189.1</td>
+                    <td class="question">6. Of the various database models, the ____ model is the most prevalent today.,"a. hierarchical<br/>b. network<br/>c. relational<br/>d. linked list<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">190.1</td>
+                    <td class="question">7. Each column in a relation is called ____.,"a. an attribute<br/>b. a tuple<br/>c. a union<br/>d. an attitude<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">191.1</td>
+                    <td class="question">8. Each row in a relation is called ____.,"a. an attribute<br/>b. a tuple<br/>c. a union<br/>d. an attitude<br/><br/><b>Correct Answer<br/><br/> B"</b></td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">192.1</td>
+                    <td class="question">9. A unary operator is applied to ____ relation(s) and creates an output of ____ relation(s).,"a. one, one<br/>b. one, two<br/>c. two, one<br/>d. two, two<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">193.1</td>
+                    <td class="question">10. A binary operator is applied to ____ relations (s) and creates an output of ____ relation(s).,"a. one, one<br/>b. one, two<br/>c. two, one<br/>d. two, two<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">194.1</td>
+                    <td class="question">11. The unary ____ operation always results in a relation that has exactly one more row than the original relation.,"a. insert<br/>b. delete<br/>c. update<br/>d. select<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">195.1</td>
+                    <td class="question">12. If you want to change the value of an attribute of a tuple, you use the ____ operation.,"a. project<br/>b. join<br/>c. update<br/>d. select<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">196.1</td>
+                    <td class="question">13. The operation that takes two relations and combines them based on common attributes is the ____ operation.,"a. join<br/>b. project<br/>c. union<br/>d. intersection<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">197.1</td>
+                    <td class="question">14. If you need to delete an attribute in a relation, you can use the ____ operation.,"a. join<br/>b. project<br/>c. union<br/>d. intersection<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">198.1</td>
+                    <td class="question">15. You want to create a relation called New that contains tuples that belong to both relation A and relation B. For this, you can use the ____ operation.,"a. select<br/>b. union<br/>c. project<br/>d. intersection<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">199.1</td>
+                    <td class="question">16. Which of the following is a unary operator?,"a. intersection<br/>b. union<br/>c. join<br/>d. project<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">200.1</td>
+                    <td class="question">1. Data is compressed using a dictionary with indexes to strings. This is ____.,"a. Huffman encoding<br/>b. Lempel Ziv encoding<br/>c. Morse coding<br/>d. lossy coding<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">201.1</td>
+                    <td class="question">2. A string of one hundred 0s is replaced by two markers, a 0, and the number 100. This is ____.,"a. run-length encoding<br/>b. Morse coding<br/>c. Huffman encoding<br/>d. Lempel Ziv encoding<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">202.1</td>
+                    <td class="question">3. ____ is an example of lossy compression.,"a. Huffman encoding<br/>b. Lempel Ziv encoding<br/>c. Run-length encoding<br/>d. JPEG<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">203.1</td>
+                    <td class="question">4. In a ____ data compression method, the received data is an exact copy of the original message.,"a. lossless<br/>b. lossy<br/>c. JPEG<br/>d. MPEG<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">204.1</td>
+                    <td class="question">5. ____ data compression method, the received data need not be an exact copy of the original message.,"a. Only in MP3<br/>b. Only in JPEG<br/>c. Only in MPEG<br/>d. In MP3, JPEG, or MPEG<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">205.1</td>
+                    <td class="question">6. ____ encoding is a lossless data compression method.,"a. Only Huffman<br/>b. Only Run-length<br/>c. Only LZ<br/>d. Huffman, run-length, or LZ<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">206.1</td>
+                    <td class="question">7. In ____ encoding, the more frequently occurring characters have shorter codes than the less frequently occurring characters.,"a. Huffman<br/>b. run-length<br/>c. LZ<br/>d. JPEG<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">207.1</td>
+                    <td class="question">8. In ____ encoding, PPPPPPPPPPPPPPP can be replaced by P15.,"a. Huffman<br/>b. run-length<br/>c. LZ<br/>d. MPEG<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">208.1</td>
+                    <td class="question">9. LZ encoding requires ____.,"a. only a dictionary<br/>b. only a buffer<br/>c. only an algorithm<br/>d. a dictionary, a buffer, and an algorithm<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">209.1</td>
+                    <td class="question">10. JPEG encoding involves ____ a process that reveals the redundancies in a block.,"a. blocking<br/>b. the discrete cosine transform<br/>c. quantization<br/>d. vectorization<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">210.1</td>
+                    <td class="question">11. In JPEG encoding, the ____ process breaks the original picture into smaller blocks and assigns a value to each pixel in a block.,"a. blocking<br/>b. DCT<br/>c. quantization<br/>d. vectorization<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">211.1</td>
+                    <td class="question">12. The last step in JPEG, ____, removes redundancies.,"a. blocking<br/>b. quantization<br/>c. compression<br/>d. vectorization<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">212.1</td>
+                    <td class="question">13. ____ is a lossy compression method for pictures and graphics, whereas ____ is a lossy compression method for video.,"a. DCT, MPEG<br/>b. MPEG, JPEG<br/>c. JPEG, MPEG<br/>d. JPEG, DCT<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">213.1</td>
+                    <td class="question">14. What is compression?,"a. To convert one file to another<br/>b. To reduce the size of data to save space<br/>c. To minimize the time taken for a file to be downloaded<br/>d. To compress something by pressing it very hard<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">214.1</td>
+                    <td class="question">15. Which of these terms is a type of data compression?,"a. resolution<br/>b. zipping<br/>c. inputting<br/>d. caching<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">215.1</td>
+                    <td class="question">1. Three security goals are ____.,"a. confidentiality, cryptography, and nonrepudiation<br/>b. confidentiality, encryption, and decryption<br/>c. confidentiality, integrity, and availability<br/>d. confidentiality, denial of service, and masquerading<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">216.1</td>
+                    <td class="question">2. Which of the following attacks is threatening integrity?,"a. Masquerading<br/>b. Traffic Analysis<br/>c. Denial of service<br/>d. Encoding<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">217.1</td>
+                    <td class="question">3. Which of the following attacks is threatening availability?,"a. Replaying<br/>b. Modification<br/>c. Denial of service<br/>d. Decoding<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">218.1</td>
+                    <td class="question">4. ____ means concealing the contents of a message by enciphering.,"a. Steganography<br/>b. Cryptography<br/>c. Compressing<br/>d. Authentication<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">219.1</td>
+                    <td class="question">5. ____means concealing the message by covering it with something else.,"a. Cryptography<br/>b. Steganography<br/>c. Compressing<br/>d. Authentication<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">220.1</td>
+                    <td class="question">6. In ____cryptography, the same key is used by the sender and the receiver.,"a. symmetric-key<br/>b. asymmetric-key<br/>c. public-key<br/>d. open-key<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">221.1</td>
+                    <td class="question">7. In ____ cryptography, the same key is used in both directions.,"a. symmetric-key<br/>b. asymmetric-key<br/>c. public-key<br/>d. open-key<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">222.1</td>
+                    <td class="question">8. ____ cryptography is often used for long messages.,"a. Symmetric-key<br/>b. Asymmetric-key<br/>c. Public-key<br/>d. Open-key<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">223.1</td>
+                    <td class="question">9. ____ cryptography is often used for short messages.,"a. Symmetric-key<br/>b. Asymmetric-key<br/>c. Secret-key<br/>d. Open-key<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">224.1</td>
+                    <td class="question">10. ____ means that the sender and the receiver expect confidentiality.,"a. Nonrepudiation<br/>b. Integrity<br/>c. Authentication<br/>d. encryption and decryption<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">225.1</td>
+                    <td class="question">11. ____ means that the data must arrive at the receiver exactly as they were sent.,"a. Nonrepudiation<br/>b. Message integrity<br/>c. Authentication<br/>d. Secrecy<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">226.1</td>
+                    <td class="question">12. ____ can provide authentication, integrity, and nonrepudiation for a message.,"a. Encryption/decryption<br/>b. Digital signature<br/>c. Compression<br/>d. Key-exchange<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">227.1</td>
+                    <td class="question">13. In ____, the identity of a party is verified once for the entire duration of system access.,"a. entity authentication<br/>b. message integrity<br/>c. message authentication<br/>d. message encryption<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">228.1</td>
+                    <td class="question">14. In ____ cryptography, everyone has access to everyone's public key.,"a. symmetric-key<br/>b. asymmetric-key<br/>c. secret-key<br/>d. private-key<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">229.1</td>
+                    <td class="question">15. In the asymmetric-key method used for confidentiality, which key(s) is (are) publicly known?,"a. encryption key only<br/>b. decryption key only<br/>c. both encryption and decryption keys<br/>d. neither encryption key nor decryption key<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">230.1</td>
+                    <td class="question">1. The ____ statement adds 1 to the variable.,"a. increment<br/>b. decrement<br/>c. loop<br/>d. complement<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">231.1</td>
+                    <td class="question">2. The ____ statement repeats one or more actions.,"a. increment<br/>b. decrement<br/>c. loop<br/>d. complement<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">232.1</td>
+                    <td class="question">3. The ____ statement subtracts 1 from the variable.,"a. increment<br/>b. decrement<br/>c. loop<br/>d. complement<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">233.1</td>
+                    <td class="question">4. To clear a variable, we use the ____ statement(s).,"a. increment<br/>b. decrement<br/>c. loop<br/>d. decrement and loop<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">234.1</td>
+                    <td class="question">5. To assign a number to a variable, we use the ____ statement(s).,"a. increment<br/>b. decrement<br/>c. loop<br/>d. decrement and loop<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">235.1</td>
+                    <td class="question">6. To copy the value of one variable to another, we use the ____ statement(s).,"a. increment<br/>b. decrement<br/>c. loop<br/>d. increment, decrement, and loop<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">236.1</td>
+                    <td class="question">7. A Turing machine has these components:,"a. tape, memory, and read/write head<br/>b. disk, controller, and read/write head<br/>c. tape, controller, and read/write head<br/>d. disk, memory, and controller<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">237.1</td>
+                    <td class="question">8. In a Turing machine, the ____ holds a sequence of characters.,"a. disk<br/>b. tape<br/>c. controller<br/>d. read/write head<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">238.1</td>
+                    <td class="question">9. The ____ is the theoretical counterpart of the CPU.,"a. disk<br/>b. tape<br/>c. controller<br/>d. read/write head<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">239.1</td>
+                    <td class="question">10. The controller has ____ states.,"a. three<br/>b. four<br/>c. a finite number of<br/>d. an infinite number of<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">240.1</td>
+                    <td class="question">11. A ____ is a pictorial representation of the states and their relationships to each other.,"a. transition diagram<br/>b. flowchart<br/>c. transition table<br/>d. Turing machine<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">241.1</td>
+                    <td class="question">12. A ____ shows, among other things, the movement of the read/write head, the character read, and the character written.,"a. diagram<br/>b. flowchart<br/>c. transition table<br/>d. Turing machine<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">242.1</td>
+                    <td class="question">13. We use ____ to denote a program's complexity.,"a. the Turing number<br/>b. big-O notation<br/>c. factorials<br/>d. the Simple Language<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">243.1</td>
+                    <td class="question">14. The complexity of a problem is O (log10 n) and the computer executes 1 million instructions per second. How long does it take to run the program if the number of operations is 10,000?,"a. 1 microsecond<br/>b. 2 microseconds<br/>c. 3 microseconds<br/>d. 4 microseconds<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">244.1</td>
+                    <td class="question">15. When does the code block following while(x&lt;100) execute?,"a. When x is less than one hundred<br/>b. When x is greater than one hundred<br/>c. When x is equal to one hundred<br/>d. While it wishes<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">245.1</td>
+                    <td class="question">1. The main foundation of thinking machines came from:,"a. Sir Isaac Newton<br/>b. Gottfried W. Leibniz<br/>c. Alan Turing<br/>d. John McCarthy<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">246.1</td>
+                    <td class="question">2. The term Artificial Intelligence (AI) was first coined by:,"a. Alan Turing<br/>b. John McCarthy<br/>c. Steven Spielberg<br/>d. Richard H. Richen<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">247.1</td>
+                    <td class="question">3. Two programing languages specifically designed for Al are:,"a. C and C++<br/>b. Java and C++<br/>c. LISP and PROLOG<br/>d. FORTRAN and COBOL<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">248.1</td>
+                    <td class="question">4. A node in semantic network becomes ____.,"a. a slot in frames<br/>b. an edge in frames<br/>c. an object in frames<br/>d. a line in frames<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">249.1</td>
+                    <td class="question">5. Which of the following is not a sentence in a propositional logic:,"a. Ford is a car.<br/>b. If John is home then Mary is at work.<br/>c. True.<br/>d. Where is John?<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">250.1</td>
+                    <td class="question">6. Two quantifiers " and $ are used in:,"a. propositional logic<br/>b. predicate logic<br/>c. atomic sentences<br/>d. conclusion of any argument<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">251.1</td>
+                    <td class="question">7. To find the depth of an object, we use:,"a. edge detection<br/>b. segmentation<br/>c. stereo vision<br/>d. shading<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">252.1</td>
+                    <td class="question">8. To find the orientation of an object, we use:,"a. stereo vision<br/>b. motion<br/>c. texture<br/>d. segmentation<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">253.1</td>
+                    <td class="question">9. In language understanding, parsing a sentence is part of:,"a. speech recognition<br/>b. syntactic analysis<br/>c. semantic analysis<br/>d. pragmatic analysis<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">254.1</td>
+                    <td class="question">10. We use brute-force search:,"a. if we have no prior knowledge about the search<br/>b. if we need to do the search quickly<br/>c. if we need to do the search thoroughly<br/>d. after performing heuristic search<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">255.1</td>
+                    <td class="question">1. In Facebook, friendship is a ____ relationship.,"a. one-to-one<br/>b. one-to-many<br/>c. many-to-one<br/>d. many-to-many<br/><br/><b>Correct Answer<br/><br/> A</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">256.1</td>
+                    <td class="question">2. Communication in Facebook is a ____ relationship.,"a. one-to-one<br/>b. one-to-many<br/>c. many-to-one<br/>d. many-to-many<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">257.1</td>
+                    <td class="question">3. The home page in Facebook can be used ____.,"a. only for sign-up<br/>b. only for log-in<br/>c. both for sign-up and log-in<br/>d. neither for sign-up nor for log-in<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">258.1</td>
+                    <td class="question">4. To find friends in Facebook, the member can ____.,"a. can accept Facebook recommendation<br/>b. follow email contacts<br/>c. look for old friends<br/>d. all of the above<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">259.1</td>
+                    <td class="question">5. When you are in Facebook, you can ____.,"a. post news.<br/>b. read news<br/>c. neither a nor b<br/>d. both a and b<br/><br/><b>Correct Answer<br/><br/> D</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">260.1</td>
+                    <td class="question">6. In Twitter, a message can be ____.,"a. of any size<br/>b. of maximum 100 characters<br/>c. of maximum 140 characters<br/>d. of maximum 200 characters<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">261.1</td>
+                    <td class="question">7. In Twitter, the relationship between member is based on:,"a. friendship<br/>b. following<br/>c. either a or b<br/>d. both a and b<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">262.1</td>
+                    <td class="question">8. In Twitter, follower-member is a ____ relationship.,"a. one-to-one.<br/>b. one-to-many<br/>c. many-to-one<br/>d. many-to-many<br/><br/><b>Correct Answer<br/><br/> C</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">263.1</td>
+                    <td class="question">9. In Twitter, communication between the sender and the receiver of a tweet is a ____.,"a. one-to-one.<br/>b. one-to-many<br/>c. many-to-one<br/>d. many-to-many<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="index" style="">264.1</td>
+                    <td class="question">10. In Twitter, when a message is posted, ____.,"a. all members in the twitter can see it.<br/>b. only followers of the sender can see it.<br/>c. only friends of the sender can see it.<br/>d. none of the above<br/><br/><b>Correct Answer<br/><br/> B</b>"</td>
+                    <td class="spacer">&nbsp;</td>
+                    <td class="answer"><br/><br/></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+    
+    <hr>
+</div>
+</body>
+</html>
